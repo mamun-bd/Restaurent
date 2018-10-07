@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCheckoutViewCellID" rowHeight="248" id="KGk-i7-Jjw" customClass="CartCheckoutViewCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHB-pn-Yqj">
+                        <rect key="frame" x="5" y="5" width="310" height="38"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tyA-IH-olS">
+                                <rect key="frame" x="5" y="5" width="300" height="29"/>
+                                <segments>
+                                    <segment title="Checkout"/>
+                                    <segment title="0.0"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tyA-IH-olS" secondAttribute="trailing" constant="5" id="AbU-1q-Vue"/>
+                            <constraint firstItem="tyA-IH-olS" firstAttribute="leading" secondItem="bHB-pn-Yqj" secondAttribute="leading" constant="5" id="GiZ-z6-oRB"/>
+                            <constraint firstAttribute="bottom" secondItem="tyA-IH-olS" secondAttribute="bottom" constant="5" id="ZvW-Jw-JYq"/>
+                            <constraint firstItem="tyA-IH-olS" firstAttribute="top" secondItem="bHB-pn-Yqj" secondAttribute="top" constant="5" id="tgL-w2-X8o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bHB-pn-Yqj" secondAttribute="trailing" constant="5" id="1Oo-ut-XY8"/>
+                    <constraint firstItem="bHB-pn-Yqj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="8hR-Yf-4O5"/>
+                    <constraint firstItem="bHB-pn-Yqj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="PkX-Ff-HDw"/>
+                    <constraint firstAttribute="bottom" secondItem="bHB-pn-Yqj" secondAttribute="bottom" priority="249" id="YzM-du-okM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-44" y="-135"/>
+        </tableViewCell>
+    </objects>
+</document>

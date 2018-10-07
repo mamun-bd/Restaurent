@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecentOfferCell" id="gTV-IL-0wX" customClass="RecentOfferCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcT-lk-nA4">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-LI-d5L">
+                                <rect key="frame" x="4.5" y="4.5" width="399" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjB-wH-Mq0">
+                                        <rect key="frame" x="0.0" y="-0.5" width="399" height="60"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ma5-6H-5oz">
+                                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2nA-ca-Yx7"/>
+                                            <constraint firstAttribute="height" constant="50" id="TVz-eC-Xdf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="752" text="Burgar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-tR-qHt" customClass="SCLabel" customModule="Restaurant" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="5" width="334" height="17"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="a0A-xB-OUt" customClass="SCLabel" customModule="Restaurant" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="27" width="334" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ma5-6H-5oz" secondAttribute="bottom" constant="5" id="EYR-eC-etS"/>
+                                    <constraint firstItem="a0A-xB-OUt" firstAttribute="leading" secondItem="2Qb-tR-qHt" secondAttribute="leading" id="H3R-8n-wvG"/>
+                                    <constraint firstItem="PjB-wH-Mq0" firstAttribute="centerY" secondItem="hIT-LI-d5L" secondAttribute="centerY" id="Hoc-fB-x4C"/>
+                                    <constraint firstItem="PjB-wH-Mq0" firstAttribute="height" secondItem="hIT-LI-d5L" secondAttribute="height" id="QnS-k6-PWR"/>
+                                    <constraint firstItem="PjB-wH-Mq0" firstAttribute="centerX" secondItem="hIT-LI-d5L" secondAttribute="centerX" id="U2b-No-gil"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Qb-tR-qHt" secondAttribute="trailing" constant="5" id="XHZ-9Z-Rz5"/>
+                                    <constraint firstItem="2Qb-tR-qHt" firstAttribute="leading" secondItem="ma5-6H-5oz" secondAttribute="trailing" constant="5" id="caf-s8-2GF"/>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="a0A-xB-OUt" secondAttribute="bottom" constant="17" id="dgs-yk-afc"/>
+                                    <constraint firstItem="PjB-wH-Mq0" firstAttribute="width" secondItem="hIT-LI-d5L" secondAttribute="width" id="j0v-iH-WnQ"/>
+                                    <constraint firstItem="ma5-6H-5oz" firstAttribute="leading" secondItem="hIT-LI-d5L" secondAttribute="leading" constant="5" id="ksb-BM-eNa"/>
+                                    <constraint firstItem="a0A-xB-OUt" firstAttribute="top" secondItem="2Qb-tR-qHt" secondAttribute="bottom" constant="5" id="sJR-4a-YRK"/>
+                                    <constraint firstItem="ma5-6H-5oz" firstAttribute="top" secondItem="hIT-LI-d5L" secondAttribute="top" constant="5" id="stv-dz-dw2"/>
+                                    <constraint firstItem="a0A-xB-OUt" firstAttribute="trailing" secondItem="2Qb-tR-qHt" secondAttribute="trailing" id="vQk-NV-lXd"/>
+                                    <constraint firstItem="2Qb-tR-qHt" firstAttribute="top" secondItem="hIT-LI-d5L" secondAttribute="top" constant="5" id="wiE-I2-UWl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hIT-LI-d5L" firstAttribute="width" secondItem="tcT-lk-nA4" secondAttribute="width" constant="-10" id="Hv3-Oe-2gF"/>
+                            <constraint firstItem="hIT-LI-d5L" firstAttribute="centerY" secondItem="tcT-lk-nA4" secondAttribute="centerY" id="OwN-Q8-r1p"/>
+                            <constraint firstItem="hIT-LI-d5L" firstAttribute="height" secondItem="tcT-lk-nA4" secondAttribute="height" constant="-10" id="bnY-rs-Ca1"/>
+                            <constraint firstItem="hIT-LI-d5L" firstAttribute="centerX" secondItem="tcT-lk-nA4" secondAttribute="centerX" id="cUY-TQ-ZEJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tcT-lk-nA4" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="ayj-wb-Gh6"/>
+                <constraint firstItem="tcT-lk-nA4" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="hBS-BC-vOO"/>
+                <constraint firstItem="tcT-lk-nA4" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="x2c-h4-hlE"/>
+                <constraint firstItem="tcT-lk-nA4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="zWU-US-zza"/>
+            </constraints>
+            <size key="customSize" width="492" height="229"/>
+            <connections>
+                <outlet property="artworkContainer" destination="ma5-6H-5oz" id="4bn-GL-KVf"/>
+                <outlet property="container" destination="hIT-LI-d5L" id="a3g-1W-HyQ"/>
+            </connections>
+            <point key="canvasLocation" x="575.5" y="-21.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Food.jpeg" width="1920" height="1440"/>
+    </resources>
+</document>

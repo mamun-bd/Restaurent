@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceipeCartCellID" id="KGk-i7-Jjw" customClass="ReceipeCartCell" customModule="Restaurent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ci9-u0-f1s">
+                        <rect key="frame" x="40" y="-44" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add To Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-X3-G1r">
+                        <rect key="frame" x="5" y="0.0" width="310" height="39.5"/>
+                        <color key="backgroundColor" red="0.086944276690000002" green="0.70143948219999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPR-P7-OMr">
+                        <rect key="frame" x="5" y="0.0" width="310" height="39.5"/>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addCartAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S8i-ao-tkk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="aPR-P7-OMr" firstAttribute="centerX" secondItem="u3J-X3-G1r" secondAttribute="centerX" id="5fl-e1-a5q"/>
+                    <constraint firstItem="u3J-X3-G1r" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-10" id="EbQ-FP-7aM"/>
+                    <constraint firstItem="aPR-P7-OMr" firstAttribute="centerY" secondItem="u3J-X3-G1r" secondAttribute="centerY" id="ZPZ-2c-sNN"/>
+                    <constraint firstItem="u3J-X3-G1r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZW9-cI-hLb"/>
+                    <constraint firstItem="aPR-P7-OMr" firstAttribute="width" secondItem="u3J-X3-G1r" secondAttribute="width" id="a8c-ei-HzF"/>
+                    <constraint firstItem="u3J-X3-G1r" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aKK-uG-COf"/>
+                    <constraint firstItem="u3J-X3-G1r" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="qFA-HW-tJG"/>
+                    <constraint firstItem="aPR-P7-OMr" firstAttribute="height" secondItem="u3J-X3-G1r" secondAttribute="height" id="xsh-Vl-gNQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="17" y="52"/>
+        </tableViewCell>
+    </objects>
+</document>
